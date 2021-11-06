@@ -1,5 +1,7 @@
 /* Paul Richardson Fall 2021 */
 
+
+
 body {
   color: #40514E;
   font-family: 'Merriweather', serif;
@@ -24,10 +26,8 @@ h2 {
 
 
 img {
-  padding-top: auto;
-  padding-bottom: auto;
-  width: 200px;
-  height: 200px;
+  width: auto;
+  height: 50%;
 }
 
 tr:hover {
@@ -45,15 +45,20 @@ a:hover {
   color: #EAF6F6;
 }
 
-td {
+td, th  {
   text-align: center;
 }
 
+
 #top-container {
   background-color: #abc89f;
-  padding: 150px 10% 100px;
+  text-align: center;
+
 }
 
+#top-row {
+  padding: 10% 5% 0% 0%;
+}
 
 #middle-container {
   padding: 3% 3%;
@@ -62,6 +67,9 @@ td {
 #bottom-container {
   background-color: #abc89f;
   padding: 50px 0 20px;
+}
+
+
 }
 
 #calculator, #results {
@@ -75,6 +83,8 @@ td {
   color: green;
   line-height: 2px;
 }
+
+
 
 .slider {
   -webkit-appearance: none;
@@ -107,10 +117,78 @@ td {
   cursor: pointer;
 }
 
-
 .copyright {
   color: #EAF6F6;
   font-size: 1rem;
   padding: 20px 0;
   text-align: center;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+
+  /* p, label, body, span {
+    font-size: 1.25em;
+    text-align: center;
+  } */
+
+  h2, h3 {
+     font-size: 1.25em;
+     text-align: center;
+  }
+
+  img {
+    display: none;
+  }
+
+  td:not(:nth-child(1), :nth-child(2), :nth-child(5)) {
+    display: none;
+  }
+
+  th:not(:nth-child(1), :nth-child(2), :nth-child(5)) {
+    display: none;
+  }
+
+  button {
+    font-size: 50px;
+    padding-bottom: 10px;
+  }
+
+  #calculator {
+    font-size: 3ex;
+    text-align: center;    
+  }
+
+  #displayCalc {
+    font-size: 2.25em;
+  }
+
+  #top-container {
+    background-color: #abc89f;
+    /* padding: 20%; */
+  }
+
+#title {
+  font-size: 2.50em;
+}
+
+#formula {
+  font-size: 10px;
+}
+
+  .footer-link {
+    display: none;
+  }
+
+  #bottom-container {
+    background-color: #abc89f;
+    padding: 25px 0 20px;
+  }
+
+  .slider::-webkit-slider-thumb {
+    width: 50px;
+    height: 50px;
+  }
+
 }
