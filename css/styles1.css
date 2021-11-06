@@ -1,0 +1,116 @@
+/* Paul Richardson Fall 2021 */
+
+body {
+  color: #40514E;
+  font-family: 'Merriweather', serif;
+  font-size: 21px;
+  line-height: 2;
+
+}
+
+h1 {
+  font-size: 5.625rem;
+  font-family: "Montserrat-Black";
+  color: #8c5c34;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #7b946c;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+
+img {
+  padding-top: auto;
+  padding-bottom: auto;
+  width: 200px;
+  height: 200px;
+}
+
+tr:hover {
+  background-color: #abc89f;
+}
+
+a {
+  color: #8c5c34;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+td {
+  text-align: center;
+}
+
+#top-container {
+  background-color: #abc89f;
+  padding: 150px 10% 100px;
+}
+
+
+#middle-container {
+  padding: 3% 3%;
+}
+
+#bottom-container {
+  background-color: #abc89f;
+  padding: 50px 0 20px;
+}
+
+#calculator, #results {
+  padding: 3% 5%;
+}
+
+
+
+.disp-values {
+  /* font-size: 25px; */
+  color: green;
+  line-height: 2px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #7b946c;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 1rem;
+  padding: 20px 0;
+  text-align: center;
+}

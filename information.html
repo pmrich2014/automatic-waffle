@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!-- Paul Richardson Fall 2021 -->
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ammortization</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles1.css">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+
+<header>
+  <!-- fixed navbar -->
+  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Ammortization</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Calculator</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<body>
+  <section id="top-container">
+    <div class="container-fluid">
+      <div class="row" align="center">
+        <div class="col-md-4">
+          <img class="rounded-circle" src="images/calculator.jpg" alt="calc-img">
+        </div>
+        <div class="col-md-8" align:"bottom">
+          <h1>
+            <p class="text-center">Ammortization</p>
+          </h1>
+        </div>
+      </div>
+  </section>
+
+  <section id="middle-container">
+    <div class="container-fluid footer-fixed">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>
+            <p class="text-center">The Ammortization Formula</p>
+          </h2>
+          <p class="text-left"> Amortization refers to paying off debt amount on periodically over time
+            till loan principle reduces to zero. Amount paid monthly is known as
+            EMI which is equated monthly installment. EMI has both principal and
+            interest component in it which is calculated by amortization formula.
+            Amortization calculation depends on the principle, the rate of interest
+            and time period of the loan.</p>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <p class="text-center"> \[mc = {rP \over n[1 - (1 + \frac r n)^{-nt}]}\]</p>
+        </div>
+        <div class="col-lg-8">
+          <br>
+          <p class="text-center">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#principal" aria-expanded="false" aria-controls="#principal">Principal</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#length" aria-expanded="false" aria-controls="length">Length of Project</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#apr" aria-expanded="false" aria-controls="apr">Interest Rate</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#number" aria-expanded="false" aria-controls="number">Number of Payments</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#mc" aria-expanded="false" aria-controls="mc">Monthly Cost</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="#principal #length #apr #number #mc">Toggle All</button>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <!-- principal -->
+          <div class="collapse multi-collapse" id="principal">
+            <div class="card card-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td>\(P\)</td>
+                  <td>Principal is the amount of the loan borrowed to cover project</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- length -->
+          <div class="collapse multi-collapse" id="length">
+            <div class="card card-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td>\(t\)</td>
+                  <td>The length of the loan or duration of the project in years.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- apr -->
+          <div class="collapse multi-collapse" id="apr">
+            <div class="card card-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td>\(r\)</td>
+                  <td>The proportion of the loan that is charged as interest annualy.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- # of Payment / number -->
+          <div class="collapse multi-collapse" id="number">
+            <div class="card card-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td>\(n\)</td>
+                  <td>Number of payments to be made in a year</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <!-- # of Payment / number -->
+          <div class="collapse multi-collapse" id="mc">
+            <div class="card card-body">
+              <table class="table table-borderless">
+                <tr>
+                  <td>\(mc\)</td>
+                  <td>The amount of money paid monthly to cover loan with interest.</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <br>
+          <hr>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <h2>
+                <p class="text-center">Ammortization: Annual Project Cost Formula</p>
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h3>
+                <p class="text-center">Annual Costs = Monthly Cost * 12 Months
+              </h3>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p class="text-left">To calculate our annual project costs our calculation computes
+                the annual cost of a project that is funded by a loan with a fixed
+                interest rate over a fixed number of years.<sup>*</sup></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-left">
+                <em>
+                  <sup>*</sup>Note: Our calucation assumes the project is 100% funded by
+                  the loan and that the project time line is equal to the loan term.
+                </em>
+              </p>
+            </div>
+          </div>
+          <br>
+          <hr>
+          <br>
+          <div class="row">
+            <div class="col-md-12">
+              <h2>
+                <p class="text-center">An Example</p>
+              </h2>
+            </div>
+            <p>
+              If your project cost is <mark>$150,000</mark> fully funded by a loan for
+              <mark>10 years</mark> with an interest rate of <mark>4%</mark>, then your
+              annual costs will be <mark>$18,224.16</mark>.
+              <br>
+            </p>
+            <div class="row">
+              <div class="col-md-12">
+                <p class="text-center">Annual Cost: \($18,224.16 = ($1,518.68)(12)\)</p>
+                <br>
+                <p class="text-center"> Monthly Cost: \($1,518.68 = {(0.04)($150,000) \over 12[1 - (1 + \frac{0.04}{12})^{-(12)(10)}]}\) </p>
+              </div>
+            </div>
+  </section>
+
+ <section id="bottom-container">
+   <div class="container-fluid">
+     <p class="text-center">
+       <a class="footer-link" href="https://www.investopedia.com/terms/a/amortization.asp">Lean More about Ammortization</a>
+       <a class="footer-link" href="https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference">MathJax Examples</a>
+       <a class="footer-link" href="https://imagecolorpicker.com/">Image Color Picker</a>
+       <p class="copyright">© 2021 Paul Richardson.</p>
+     </p>
+   </div>
+ </section>
+
+</body>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+<!-- <script src="scripts/index.js" charset="utf-8"></script> -->
+
+</html>
